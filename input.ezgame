@@ -1,0 +1,73 @@
+ARENA:
+    size = 20;
+
+ENTITIES:
+    define player mario {
+        start = 10,10;
+        health = 10;
+        size = 1;
+        direction = right;
+    }
+
+    define enemy goomba {
+        health = 8;
+        start = 0,5;
+        size = 1;
+        damage = 2;
+        direction = up;
+    }
+
+    define obstacle box {
+        start = 2,2;
+        size = 1;
+        direction = down;
+    }
+
+    define collectable gem {
+        start = 1,0;
+        size = 1;
+        direction = left;
+    }
+
+BEHAVIOUR:
+    define function move_left_right() {
+        face right;
+        move 5;
+        wait 1 sec;
+        face left;
+        move 5;
+        wait 1 sec;
+    }
+
+    entity goomba {
+        face right;
+        move 5;
+        wait 1 sec;
+        face left;
+        move 5;
+        wait 1 sec;
+
+        var cookie = 0;
+        forever unless (on pos 30, 5) {
+            face right;
+            move 5;
+            unless (var cookie > 10) {
+                face down;
+                move var cookie;
+                face up;
+                move var cookie;
+            }
+            set cookie = var cookie + 1;
+        }
+    }
+
+    entity gem {
+        call move_left_right();
+        move 15,15;
+    }
+
+END_CRITERIA:
+    win:
+        var coin amount equals 10;
+    lose:
+        var mario health equals 0;

@@ -1,0 +1,12 @@
+# EzGame DSL - Completed February 2025
+
+### Resources
+* Animal Pack sprites by Kenney.nl: https://kenney.nl/assets/animal-pack
+* Simplified Platformer Pack sprites by Kenney.nl: https://kenney.nl/assets/simplified-platformer-pack
+
+I worked on this project with four peers as part of one of my university classes. Please view Documentation.md and the 
+mp4 video to acquaint yourself with the functionality and intended applications of this DSL (domain-specific language).
+
+To run, first generate the antlr files in the src/parser folder.
+Then, write your program in the input.exgame file. 
+Finally, run src/ui/Main.java file and your coded game will appear.
