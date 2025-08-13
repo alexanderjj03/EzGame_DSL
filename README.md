@@ -10,5 +10,5 @@ To maximize our collaborative efficiency, we utilized a Kanban board to assign t
 Please view Documentation.md to acquaint yourself with the functionality and intended applications of this DSL (domain-specific language).
 
 To run, first generate the antlr files in the src/parser folder (this step is already done here).
-Then, write your program in the input.exgame file. 
+Then, write your program in the input.ezgame file. 
 Finally, run src/ui/Main.java file and your coded game will appear.
