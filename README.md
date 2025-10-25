@@ -5,8 +5,6 @@
 Welcome to EZGame, a DSL designed for creating simple 2D games without requiring advanced programming or game design knowledge. We provide the freedom to customize your game however you wish—from creating maps and defining win/loss conditions to designing player and enemy behavior. You can even leverage functions, loops, and mutable variables to bring your unique vision to life.
 
 
-**This project was developed for CPSC 410 - Advanced Software Engineering at the University of British Columbia.**
-
 
 ## Inspiration
 We created EZGame to serve as a **stepping stone for new coders**—a creative experience that builds upon the foundations of block-based languages like **Scratch** but offers greater complexity and control. Our goal was to design a language that avoids overwhelming users with the strict syntax and extensive libraries often found in professional game development environments and programming languages. With EZGame, you can express your creativity and build your own 2D game with just a few lines of code, offering a direct and rewarding path into game design.
