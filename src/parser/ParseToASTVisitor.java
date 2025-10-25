@@ -7,7 +7,6 @@ import org.antlr.v4.runtime.misc.Pair;
 import java.util.ArrayList;
 import java.util.List;
 
-// Inspired by tinyHTML: https://github.students.cs.ubc.ca/CPSC410-2024W-T2/tinyHTML
 public class ParseToASTVisitor extends EZGameParserBaseVisitor<Node> {
     @Override
     public Program visitProgram(EZGameParser.ProgramContext ctx) {

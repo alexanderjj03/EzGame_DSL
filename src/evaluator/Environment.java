@@ -9,7 +9,6 @@ public class Environment {
     private Environment parent;
     private int memptr = 0;
 
-    // Inspired From CPSC410/tinyVars
     private Integer getFreshLocation() {
         Integer loc = memptr;
         memptr += 1;

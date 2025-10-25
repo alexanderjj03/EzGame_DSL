@@ -9,7 +9,7 @@ import parser.*;
 
 import java.io.IOException;
 
-// Inspired by tinyHTML: https://github.students.cs.ubc.ca/CPSC410-2024W-T2/tinyHTML
+
 public class Main {
     public static void main(String[] args) throws IOException {
         EZGameLexer lexer = new EZGameLexer(CharStreams.fromFileName("input.ezgame"));

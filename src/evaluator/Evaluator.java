@@ -24,7 +24,6 @@ public class Evaluator implements EZGameVisitor<EZGameBuilder, Integer> {
     private String currEntity;
     private Environment currEnvironment;
 
-    // Inspired From CPSC410/tinyVars
     private Integer getFreshLocation() {
         Integer loc = memptr;
         memptr += 1;
